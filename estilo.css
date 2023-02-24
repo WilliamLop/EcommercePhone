@@ -1,0 +1,1000 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+
+:root {
+    --bgheader: #FFFFFF;
+    --pricecolor: #D9D9D9;
+    --colorh1: #FF2D3F;
+    --colorlinksheader: #060609;
+    --colorhoverlinkh: #339FFF;
+    --whitetexto: #f5f5f5;
+    --grayprrafo: #e4e4e4d3;
+    --colorstar: #FFC300;
+    --colorstartgray: #BFC7CD;
+    --bgbanneriphone6: #2E90E5;
+}
+
+/* Defino mis estilos al body para buenas practicas en mi página web */
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+/* Le doy la altura necesaria a mi header */
+
+header {
+    background-color: var(--bgheader);
+    width: 100%;
+}
+
+/* Estilo mi header de head*/
+header .head {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+header .language select {
+    border: none;
+    font: inherit;
+    font-weight: 300;
+    font-size: 0.9rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+header .language {
+    width: 30%;
+}
+
+header .content-items {
+    display: flex;
+    gap: 50px;
+    width: 80%;
+    justify-content: end;
+}
+
+header .content-items .items {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+
+header .content-items .items .price {
+    color: var(--pricecolor);
+}
+
+/* Defino estilos globales para a, ul */
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Estilo mi header de navegación*/
+
+.header {
+    width: 70%;
+    margin: 0 auto;
+    /* height: 13vh; */
+}
+
+.header h1 {
+    padding: 5px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--colorh1);
+
+}
+
+.header nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3.1rem;
+    padding: 1rem;
+}
+
+.header .links-header {
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    color: var(--colorlinksheader);
+    font-weight: 500;
+}
+
+.header .links-header.home {
+    color: var(--colorhoverlinkh);
+    border-bottom: 2px solid var(--colorhoverlinkh);
+}
+
+.header .links-header:hover {
+    color: var(--colorhoverlinkh);
+    transition: all 0.5s ease-in-out;
+
+}
+
+
+/* Estilo mi sider-bar */
+
+.sider-bar {
+    background: linear-gradient(45deg, #E15085 10%, #C059B6, #A161E6);
+    height: 60vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.sider-bar .content-sider {
+    display: flex;
+    width: 70%;
+    height: 100%;
+    margin: 0 auto;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.sider-bar .content-sider button {
+    background: transparent;
+    border: none;
+}
+
+.sider-bar .content-sider button span {
+    font-size: 2.5rem;
+    cursor: pointer;
+}
+
+.sider-bar .content-sider .content-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    height: 100%;
+    place-items: center;
+    gap: 1rem;
+}
+
+.sider-bar .content-sider .content-info .info {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.sider-bar .content-sider .content-info .info h2 {
+    font-size: 1.5rem;
+    color: var(--whitetexto);
+}
+
+.sider-bar .content-sider .content-info .info p {
+    color: var(--grayprrafo);
+}
+
+.sider-bar .content-sider .content-info .info a {
+    color: var(--whitetexto);
+    font-size: 1rem;
+    border-bottom: 2px solid white;
+    width: 37px;
+}
+
+.sider-bar .content-sider .content-info .info a:hover {
+    color: var(--colorhoverlinkh);
+    border-bottom: 2px solid var(--colorhoverlinkh);
+    transition: all 0.7s ease-in-out;
+}
+
+.sider-bar .content-sider .content-info img {
+    height: 100%;
+    position: relative;
+    top: 80px;
+}
+
+/* Estilo general para todas las contenedores con img de fondo */
+.img {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Estilo mi contenido de articulos */
+.content-articles {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    position: relative;
+    top: -110px;
+    align-items: start;
+    /* padding: 1rem; */
+
+}
+
+
+
+/* Estilo el articulo iphone */
+.content-articles .article-iphone {
+    background-color: #FF6875;
+    height: 100%;
+    padding: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: var(--whitetexto);
+    overflow: hidden;
+    position: relative;
+}
+
+.content-articles .article-iphone img {
+    height: 200px;
+    width: 250px;
+    position: absolute;
+    top: 54px;
+    right: -10px;
+    z-index: 1;
+
+}
+
+.content-articles .article-iphone .info {
+    z-index: 2;
+    width: 280px;
+    padding-left: 1rem;
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+
+.content-articles .article-iphone .info .text {
+    color: var(--grayprrafo);
+    font-size: 0.7rem;
+    width: 200px;
+}
+
+.content-articles .article-iphone .info .price {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    width: 50px;
+
+}
+
+/* Estilo el articulo oculus */
+
+.content-articles .article-oculus {
+    background-color: #F6F7F8;
+    height: 100%;
+    padding: 0.5rem;
+
+}
+
+.content-articles .article-oculus .oculus {
+    background-image: url(img/oculusrift.png);
+    height: 140px;
+    background-size: 280px 220px;
+    margin: 10px auto;
+    position: relative;
+    top: 9px;
+
+}
+
+.content-articles .article-oculus .info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.content-articles .article-oculus .info h3 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.content-articles .article-oculus .info p {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 500;
+    
+}
+
+/* Estilo el articulo gopro */
+
+.content-articles .article-gopro {
+    background-color: #C1C8CE;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    overflow: hidden;
+    padding: 0.5rem;
+}
+
+
+.content-articles .article-gopro .gopro {
+    background-image: url(img/goproedit.png);
+    background-size: 160px 180px;
+    position: relative;
+    top: 30px;
+}
+
+.content-articles .article-gopro .info {
+    padding-left: 1rem;
+}
+
+.content-articles .article-gopro .info h3 {
+    font-size: 1rem;
+    letter-spacing: 1px;
+}
+
+.content-articles .article-gopro .info .text {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    /* establece el número de líneas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    font-weight: 300;
+}
+
+.content-articles .article-gopro .info .price {
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+    width: 50px;
+
+}
+
+
+
+
+
+/* Estilo en la seccion de productos */
+
+.contenedor {
+    position: relative;
+    display: inline-block;
+}
+
+.capa {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.808);
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+
+.capa:hover {
+    opacity: 1;
+}
+
+.capa a {
+
+    color: var(--colorhoverlinkh);
+    font-size: 2rem;
+    position: absolute;
+    top: 50%;
+    border: 1px solid #c4c4c4be;
+    border-radius: 50%;
+    display: flex;
+    padding: 0.5rem;
+    transform: translate(-50%, -50%);
+}
+
+.capa a:hover {
+    background-color: var(--colorhoverlinkh);
+    color: white;
+    transition: all 0.6s ease-in-out;
+
+}
+
+.capa a:first-child {
+    top: 50%;
+    left: 30%;
+}
+
+.capa a:last-child {
+    top: 50%;
+    right: 10%;
+}
+
+
+
+
+.best-seller {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.best-seller h1 {
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.best-seller nav ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 60%;
+    padding: 1rem;
+}
+
+
+.best-seller nav ul li .all {
+    color: var(--colorhoverlinkh);
+    border-bottom: 2px solid var(--colorhoverlinkh);
+
+}
+
+.best-seller nav ul li a {
+    color: var(--colorlinksheader);
+    font-size: 1rem;
+}
+
+.best-seller nav ul li a:hover {
+    color: var(--colorhoverlinkh);
+    transition: all 0.5s ease-out;
+
+
+}
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    text-align: center;
+    gap: 1.5rem;
+    margin: 30px auto;
+}
+
+.best-seller .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+
+}
+
+.best-seller button {
+    font: inherit;
+    font-size: 1rem;
+    background: transparent;
+    border: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    border-bottom: 2px solid var(--colorlinksheader);
+}
+
+.best-seller button:hover {
+    border-bottom: 2px solid var(--colorhoverlinkh);
+    color: var(--colorhoverlinkh);
+    transition: all 0.5s ease-out;
+}
+
+.products-grid .container {
+    background-color: var(--bgheader);
+    /* width: 35%; */
+    border: 1px solid rgba(34, 34, 34, 0.048);
+    border-radius: 5px;
+    padding: 1.5rem 1rem;
+    position: relative;
+    filter: drop-shadow(1px 1px 3px rgba(214, 214, 214, 0.199));
+}
+
+.products-grid .container h3 {
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+.start span {
+    color: var(--colorstar);
+    font-size: 1.2rem;
+}
+
+.start span:last-child {
+    color: var(--colorstartgray);
+}
+
+.products-grid .container .marca {
+    background-color: #FF4858;
+    color: var(--whitetexto);
+    width: 50px;
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 2px rgba(0, 0, 0, 0.438));
+    position: absolute;
+    top: 5px;
+    left: 5px;
+
+}
+
+.price {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1rem;
+}
+
+.price p {
+    color: var(--colorh1);
+    font-weight: 500;
+}
+
+.price del {
+    color: var(--pricecolor);
+}
+
+.products-grid .container img {
+    width: 100%;
+}
+
+
+
+
+/* Estilo el banner de iphone 6 s plus */
+.banner {
+    width: 100%;
+    background-color: var(--bgbanneriphone6);
+    display: grid;
+    align-items: center;
+    padding: 5rem 0;
+    margin-top: 12rem;
+}
+
+.content {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+
+.banner .info h1 {
+    font-weight: 400;
+    font-size: 2rem;
+    color: var(--whitetexto);
+
+}
+
+.banner .info p {
+    width: 240px;
+    color: var(--grayprrafo);
+}
+
+.banner .info a {
+    color: var(--whitetexto);
+    border-bottom: 2px solid var(--whitetexto);
+}
+
+.banner .info a:hover {
+    color: var(--colorh1);
+    border-bottom: 2px solid var(--colorh1);
+    transition: all 0.5s ease-out;
+
+
+}
+
+.banner .iphone6 {
+    width: 100%;
+    position: relative;
+
+}
+
+.banner .iphone6 img {
+    position: absolute;
+    top: -13.1rem;
+    right: 0;
+}
+
+
+/* Estilo la seccion de servicios */
+
+.services {
+    width: 70%;
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    text-align: center;
+}
+
+.services article {
+    background: var(--bgheader);
+    border: 1px solid rgba(126, 126, 126, 0.055);
+    filter: drop-shadow(1px 1px 3px rgba(150, 150, 150, 0.062));
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.services article h2 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+
+/* Estilo la seccion de articulos latest */
+
+.latest {
+    margin: 125px auto;
+}
+
+.latest .content {
+    width: 70%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+}
+
+.text-latest-feacured {
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.latest h2 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.latest .content .article {
+    display: flex;
+    gap: 1rem;
+}
+
+.latest .content .article .img-latest {
+    height: 100%;
+    width: 110px;
+}
+
+
+.latest .content .article h4 {
+    font-size: 0.9rem;
+}
+
+.latest .content .article p:first-child {
+    color: var(--colorstartgray);
+    font-weight: 500;
+}
+
+.latest .content .article p:last-child {
+    color: var(--colorlinksheader);
+    font-size: 0.7rem;
+}
+
+
+
+/* Estilo la seccion featured products */
+.featured {
+    margin: 50px auto;
+    width: 100%;
+}
+
+.featured .content-featured {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    margin: 50px auto;
+    width: 70%;
+}
+
+.featured .content-featured .article-featured {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: end;
+    gap: 1rem;
+    background-color: var(--bgheader);
+    border: 1px solid rgba(128, 128, 128, 0.267);
+    border-radius: 5px;
+    filter: drop-shadow(1px 1px 2px rgba(128, 128, 128, 0.199));
+}
+
+.featured .content-featured .article-featured .info {
+    display: grid;
+    align-items: end;
+    height: 100%;
+}
+
+.featured .content-featured .article-featured .img {
+    display: grid;
+    place-items: center;
+}
+
+.featured .content-featured .article-featured .img img {
+    height: 150px;
+}
+
+.featured .content-featured .article-featured .info .start span {
+    font-size: 0.9rem;
+}
+
+.featured .content-featured .article-featured .info .price-featured {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.featured .content-featured .article-featured .info .price-featured p {
+    color: var(--colorh1);
+    font-size: 1rem;
+}
+
+.featured .content-featured .article-featured .info .price-featured del {
+    color: var(--colorlinksheader);
+}
+
+/* Estilo el search */
+
+.search-content {
+    width: 50%;
+    margin: 100px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+
+.search-content input {
+    padding: 1rem;
+    border: none;
+    width: 50%;
+    border: 1px solid rgba(128, 128, 128, 0.253);
+    border-radius: 0.5rem;
+    outline: none;
+
+}
+
+.search-content input:focus {
+    filter: drop-shadow(1px 1px 3px rgba(105, 105, 105, 0.185));
+}
+
+.search-content button {
+    padding: 1rem 0;
+    width: 25%;
+    border: none;
+    border-radius: 0.5rem;
+    background-color: var(--bgbanneriphone6);
+    color: var(--whitetexto);
+    cursor: pointer;
+    text-align: center;
+    font: inherit;
+    text-transform: uppercase;
+}
+
+.search-content button:hover {
+    background-color: var(--colorhoverlinkh);
+}
+
+
+/* Estilo el footer */
+
+
+/* El footer one */
+
+.footer-one {
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 1rem 0;
+    align-items: end;
+}
+
+.footer-one .div {
+    height: 100%;
+}
+
+
+.footer-one .div h1 {
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #BFC7CD;
+    font-weight: 400;
+}
+
+.footer-one .bouncer p {
+    line-height: 20px;
+
+}
+
+.footer-one .follow p {
+    line-height: 30px;
+
+}
+
+.footer-one .contact p {
+    line-height: 15px;
+
+}
+
+/* Estilo Footer two */
+.footer-two {
+    padding: 1rem 0;
+    width: 70%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(120px), auto));
+    align-items: start;
+    gap: 1.5rem;
+}
+
+.footer-two ul {
+    padding: 0;
+}
+
+.footer-two ul li {
+    line-height: 1.5rem;
+    cursor: pointer;
+}
+
+.footer-two ul li:hover {
+    color: var(--colorhoverlinkh);
+    transition: all 0.6s ease-out;
+}
+
+
+
+/* Estilo mi footer-three */
+.footer-three {
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.hr {
+    border: none;
+    border: 1px solid rgba(128, 128, 128, 0.055);
+}
+
+
+/* Ajusto mi header al laptop de 600px de altura */
+
+@media (max-height: 610px) {
+
+    .sider-bar {
+        height: 80vh;
+    }
+
+    .content-articles {
+        position: relative;
+        top: -80px;
+        background-color: red;
+    }
+
+    .content-articles .article-iphone .info {
+        width: 180px;
+
+    }
+
+    .products-grid .container {
+        filter: drop-shadow(1px 1px 3px rgba(214, 214, 214, 0.5));
+
+    }
+
+    .services article {
+        border: 1px solid rgba(126, 126, 126, 0.164);
+        filter: drop-shadow(1px 1px 3px rgba(150, 150, 150, 0.171));
+
+    }
+
+    .featured .content-featured .article-featured .img {
+        width: 150px;
+        height: 180px;
+    }
+    .sider-bar .content-sider .content-info img {
+        position: relative;
+        top: 90px;
+    }
+   
+
+}
+
+@media (max-width: 667px) {
+
+    .head {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 0.5rem;
+        justify-content: start;
+    }
+
+    .language {
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .head .content-items {
+        width: 100%;
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .header nav ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1rem;        
+    }
+
+    .content {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .banner .iphone6 img {
+        top: -3rem;
+        right: -5rem;
+    }
+
+    .best-seller nav ul {
+        display: flex;
+        gap: 1rem;
+    }
+    .content-articles {
+        position: relative;
+        top: -50px;
+        background-color: red;
+    }
+
+    .sider-bar .content-sider .content-info img {
+        height: 100%;
+        position: relative;
+        top: -10px;
+    }
+    .search-content {
+        width: 70%;
+        gap: 0.2rem;
+    }
+
+    .search-content input {
+        width: 70%;   
+    }
+    .search-content button {
+        width: 30%;
+    }
+
+    
+}
+
+@media (max-width: 375px) {
+    .banner .iphone6 img {
+        position: absolute;
+        /* top: ; */
+        /* right: 0; */
+        width: 250px;
+    }
+    .search-content {
+        width: 70%;
+        gap: 0.2rem;
+    }
+
+    .search-content input {
+        width: 70%;   
+    }
+    .search-content button {
+        width: 30%;
+    }
+}
+
